@@ -1,0 +1,308 @@
+/* Farben: #24272E / #fff / #E2594D / #CEA983 */
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Adjust text insde the HTML */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  height: -webkit-fill-available;
+}
+header {
+  background-color: #fff;
+  padding: 1%;
+}
+
+header > h1 {
+  color: #24272e;
+}
+
+body {
+  text-align: center;
+  background-color: #24272e;
+  color: #fff;
+  font-family: Righteous;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  height: 100vh;
+}
+
+.selection-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25vw;
+  height: 30vh;
+  border: 3px solid #fff;
+  margin: 1.5% auto;
+  position: relative;
+  font-size: 1.8rem;
+}
+
+.scoreCard {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 25vw;
+  height: 18vh;
+  border: 3px solid #fff;
+  margin: 1% auto;
+  position: relative;
+  font-size: 2.5rem;
+}
+
+form {
+  width: 100%;
+  height: 30%;
+  margin: 3% auto;
+}
+
+form > label {
+  margin: 5%;
+}
+
+input[type="radio"] {
+  margin-right: 2%;
+  margin-top: -1%;
+  vertical-align: middle;
+}
+
+.gamer > #gamer,
+.gamer > #comp {
+  text-align: center;
+  background-color: #e2594d;
+  color: #fff;
+  font-size: 1rem;
+  padding: 3% 5%;
+  position: absolute;
+  top: 35%;
+  width: 25%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#gamer {
+  left: -13%;
+}
+
+#comp {
+  right: -13%;
+}
+
+#move-wrap > button {
+  background-color: transparent;
+  border: 3px solid #fff;
+  width: 15vh;
+  height: 15vh;
+  border-radius: 50%;
+  margin: 1%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#rock {
+  background-image: url(../img/icons8-hand_-felsen-50.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#paper {
+  background-image: url(../img/icons8-ganze-hand-50.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#scissor {
+  background-image: url(../img/icons8-hand_-schere-50.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#winnerDisplay {
+  animation: pulsate .6s infinite alternate;
+  text-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+}
+
+@keyframes pulsate {
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #bc13fe,
+      0 0 80px #bc13fe, 0 0 90px #bc13fe, 0 0 100px #bc13fe, 0 0 150px #bc13fe;
+  }
+
+  0% {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #bc13fe,
+      0 0 45px #bc13fe, 0 0 55px #bc13fe, 0 0 70px #bc13fe, 0 0 80px #bc13fe;
+  }
+}
+
+.winner {
+  background-color: #00800025 !important;
+  border: 3px solid green !important;
+}
+.win {
+  color: green !important;
+}
+
+.loser {
+  background-color: #ff000038 !important;
+  border: 3px solid red !important;
+}
+
+.lose {
+  color: red !important;
+}
+
+.draw {
+  background-color: #52505065 !important;
+  border: 3px solid #525050 !important;
+}
+
+#resetButton {
+  display: block;
+  margin: 1% auto;
+  height: 5%;
+  width: 10%;
+  font-family: Righteous;
+  color: #24272e;
+  font-size: 1rem;
+  background-color: lightblue;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#resetAll {
+  display: block;
+  margin: 1% auto;
+  height: 5%;
+  width: 10%;
+  font-family: Righteous;
+  color: #fff;
+  font-size: 1rem;
+  background-color: #900;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* ================== B O N U S ====================== */
+/* ================== B O N U S ====================== */
+/* Media Query */
+@media screen and (max-width: 425px) {
+  /* Adjust text insde the HTML */
+  html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    height: -webkit-fill-available;
+  }
+
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+  }
+
+  header {
+    width: 100%;
+    padding: 1.5%;
+  }
+
+  .selection-wrap {
+    width: 80vw;
+    height: 25vh;
+    margin: 10% auto;
+    margin-top: 20%;
+    font-size: 2.1rem;
+  }
+
+  .scoreCard {
+    width: 80vw;
+    height: 15vh;
+    font-size: 5rem;
+  }
+
+  form > label {
+    margin: 3%;
+    font-size: 2.5rem;
+  }
+
+  .gamer > #gamer,
+  .gamer > #comp {
+    padding: 3% 5%;
+    top: 10%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  #gamer {
+    left: -10%;
+  }
+
+  #comp {
+    right: -10%;
+  }
+
+  h2#res {
+    margin: 5% auto;
+  }
+
+  #move-wrap > button {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    margin: 5% 2%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  #rock {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  #paper {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  #scissor {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  #resetButton {
+    margin: 2% auto;
+    height: 5%;
+    width: 35%;
+    font-size: 1.3rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  #resetAll {
+    margin: 2% auto;
+    height: 5%;
+    width: 35%;
+    font-size: 1.3rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+}

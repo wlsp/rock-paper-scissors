@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+    <div class="selection-wrap">
+      <p>how many points?</p>
+      <form action="">
+      <label for="fiveRounds"><input type="radio" name="selectRounds" id="fiveRounds" value="5" onchange="roundsSelected()" checked/>5</label>
+      <label for="tenRounds"><input type="radio" name="selectRounds" id="tenRounds" value="10" onchange="roundsSelected()"/>10</label>
+      <label for="fifteenRounds"><input type="radio" name="selectRounds" id="fifteenRounds" value="15" onchange="roundsSelected()"/>15</label>
+      <label for="twentyRounds"><input type="radio" name="selectRounds" id="twentyRounds" value="20" onchange="roundsSelected()"/>20</label>
+    </form>
+      <div class="cointainer" id="winnerDisplay"></div>
+    </div>
+    <div class="scoreCard">
+      <div class="gamer user">
+        <span id="pointsGamer">0</span>
+        <span id="gamer">GAMER</span>
+      </div>
+      <span>:</span>
+      <div class="gamer comp">
+        <span id="pointsComp">0</span>
+        <span id="comp">COMP</span>
+      </div>
+    </div>
+    <h1 id="congrats"></h1>
+    <h2 id="res">Let's play</h2>
+    <div id="move-wrap">
+      <button name="buttons" id="rock"></button>
+      <button name="buttons" id="paper"></button>
+      <button name="buttons" id="scissor"></button>
+    </div>
+    <p id="makeMove">MAKE YOU MOVE.</p>
+    <button id="resetButton">restart</button>
+    <button id="resetAll" onclick="document.location.reload()">restart all</button>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
