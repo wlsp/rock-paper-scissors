@@ -76,7 +76,7 @@ form > label {
 }
 
 input[type="radio"] {
-  margin-right: 2%;
+  margin-right: 1.5%;
   margin-top: -1%;
   vertical-align: middle;
 }
@@ -237,9 +237,9 @@ input[type="radio"] {
   }
 
   .scoreCard {
-    width: 80vw;
+    width: 82vw;
     height: 15vh;
-    font-size: 5rem;
+    font-size: 4.7rem;
   }
 
   form > label {
