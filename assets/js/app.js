@@ -10,8 +10,12 @@ const winDisplay = document.getElementById("winnerDisplay")
 const rockChoice = document.getElementById("rock");
 const paperChoice = document.getElementById("paper");
 const scissorChoice = document.getElementById("scissor");
-const gamerSmall = "(gamer)".fontsize(2.5).sup();
-const compSmall = "(comp.)".fontsize(2.5).sup();
+
+/* Better withou the sup comment, who chose which choice*/
+// const gamerSmall = "(gamer)".fontsize(2.5).sup();
+// const compSmall = "(comp.)".fontsize(2.5).sup();
+// ${gamerSmall}
+// ${compSmall}
 
 /* ============= B O N U S =============== */
 //Asking the Gamer for a Gamertag
@@ -44,7 +48,7 @@ function win(gamerChoice, computerChoice) {
     pointGamer++;
     gamerPoints.innerHTML = pointGamer;
     computerPoints.innerHTML = pointComp;
-    res.innerHTML = `${gamerChoice}${gamerSmall}  beats  ${computerChoice}${compSmall}  . You win!`;
+    res.innerHTML = `${gamerChoice} beats ${computerChoice}. You win!`;
     document.getElementById(gamerChoice).classList.add('winner');
     setTimeout(function () { document.getElementById(gamerChoice).classList.remove('winner') }, 400);
     if (pointGamer === winningScore.value * 1) {
@@ -62,7 +66,7 @@ function loses(gamerChoice, computerChoice) {
     pointComp++;
     gamerPoints.innerHTML = pointGamer;
     computerPoints.innerHTML = pointComp;
-    res.innerHTML = `${gamerChoice}${gamerSmall}  loses to  ${computerChoice}${compSmall}. You lost, buddy...`;
+    res.innerHTML = `${gamerChoice} loses to ${computerChoice}. You lost...`;
     document.getElementById(gamerChoice).classList.add('loser');
     setTimeout(function () { document.getElementById(gamerChoice).classList.remove('loser') }, 400);
     if (pointComp === winningScore.value * 1) {
@@ -76,7 +80,7 @@ function loses(gamerChoice, computerChoice) {
 
 // Setting the Draw Settences  .innerHTML
 function draw(gamerChoice, computerChoice) {
-    res.innerHTML = `${gamerChoice}${gamerSmall}  // ${computerChoice}${compSmall}  . It's a draw.`;
+    res.innerHTML = `${gamerChoice} // ${computerChoice}. It's a draw.`;
     document.getElementById(gamerChoice).classList.add('draw');
     setTimeout(function () { document.getElementById(gamerChoice).classList.remove('draw') }, 400);
 }
