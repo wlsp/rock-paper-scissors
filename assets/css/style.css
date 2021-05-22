@@ -105,8 +105,8 @@ input[type="radio"] {
 
 #comp {
   background-color: #fafe13;
-  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #fafe13,
-  0 0 0.8rem #fafe13, 0 0 2.8rem #fafe13, inset 0 0 1.3rem #fafe13;
+  box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 .8rem #fafe13,
+  0 0 0.1rem #fafe13, 0 0 .5rem #fafe13, inset 0 0 .5rem #fafe13;
 
   right: -13%;
 }

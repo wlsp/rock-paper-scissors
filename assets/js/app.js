@@ -22,7 +22,7 @@ const scissorChoice = document.getElementById("scissor");
 var info = alert("Please enter your Gamertag before the game starts!");
 var gamerName = prompt("Gamertag:", "");
 function requiredFunction() {
-    document.getElementById("gamer").innerHTML = gamerName;
+    document.getElementById("gamer").innerHTML = gamerName.toUpperCase();
 }
 requiredFunction();
 /* ============= B O N U S =============== */
