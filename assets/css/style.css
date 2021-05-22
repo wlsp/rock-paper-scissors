@@ -307,6 +307,28 @@ input[type="radio"] {
   }
 }
 
+@media screen and (max-width: 395px) { 
+
+  .selection-wrap {
+    width: 95vw;
+    height: 25vh;
+    margin: 10% auto;
+    margin-top: 5%;
+    font-size: 1.8rem;
+  }
+
+  form > label {
+    margin: 1%;
+  }
+  
+  input[type="radio"] {
+    margin-right: 1%;
+    margin-top: -1%;
+    vertical-align: middle;
+  }
+
+}
+
 @media screen and (max-width: 365px) { 
 
   .selection-wrap {
