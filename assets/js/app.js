@@ -52,7 +52,7 @@ function win(gamerChoice, computerChoice) {
     document.getElementById(gamerChoice).classList.add('winner');
     setTimeout(function () { document.getElementById(gamerChoice).classList.remove('winner') }, 400);
     if (pointGamer === winningScore.value * 1) {
-        winDisplay.innerHTML = gamerName.toUpperCase() + ", YOU WIN!";
+        gamerWinDisplay.innerHTML = gamerName.toUpperCase() + ", YOU WIN!";
         // Disable the Buttons - if the Gamers WIN!
         document.getElementById('rock').disabled = true;
         document.getElementById('paper').disabled = true;
@@ -70,7 +70,7 @@ function loses(gamerChoice, computerChoice) {
     document.getElementById(gamerChoice).classList.add('loser');
     setTimeout(function () { document.getElementById(gamerChoice).classList.remove('loser') }, 400);
     if (pointComp === winningScore.value * 1) {
-        winDisplay.innerHTML = "COMP WIN!";
+        compWinDisplay.innerHTML = "COMP WIN!";
         // Disable the Buttons - if the Comp WIN!
         document.getElementById('rock').disabled = true;
         document.getElementById('paper').disabled = true;
@@ -125,5 +125,6 @@ function reset() {
     document.getElementById('rock').disabled = false;
     document.getElementById('paper').disabled = false;
     document.getElementById('scissor').disabled = false;
-    winDisplay.innerHTML = " ";
+    gamerWinDisplay.innerHTML = " ";
+    compWinDisplay.innerHTML = " ";
 }
