@@ -50,7 +50,7 @@ function win(gamerChoice, computerChoice) {
     computerPoints.innerHTML = pointComp;
     res.innerHTML = `${gamerChoice} beats ${computerChoice}. You win!`;
     document.getElementById(gamerChoice).classList.add('winner');
-    setTimeout(function () { document.getElementById(gamerChoice).classList.remove('winner') }, 400);
+    setTimeout(() => { document.getElementById(gamerChoice).classList.remove('winner') }, 400);
     if (pointGamer === winningScore.value * 1) {
         gamerWinDisplay.innerHTML = gamerName.toUpperCase() + ", YOU WIN!";
         // Disable the Buttons - if the Gamers WIN!
@@ -68,7 +68,7 @@ function loses(gamerChoice, computerChoice) {
     computerPoints.innerHTML = pointComp;
     res.innerHTML = `${gamerChoice} loses to ${computerChoice}. You lost...`;
     document.getElementById(gamerChoice).classList.add('loser');
-    setTimeout(function () { document.getElementById(gamerChoice).classList.remove('loser') }, 400);
+    setTimeout(() => { document.getElementById(gamerChoice).classList.remove('loser') }, 400);
     if (pointComp === winningScore.value * 1) {
         compWinDisplay.innerHTML = "COMP WIN!";
         // Disable the Buttons - if the Comp WIN!
@@ -82,7 +82,7 @@ function loses(gamerChoice, computerChoice) {
 function draw(gamerChoice, computerChoice) {
     res.innerHTML = `${gamerChoice} // ${computerChoice}. It's a draw.`;
     document.getElementById(gamerChoice).classList.add('draw');
-    setTimeout(function () { document.getElementById(gamerChoice).classList.remove('draw') }, 400);
+    setTimeout( () => { document.getElementById(gamerChoice).classList.remove('draw') }, 400);
 }
 
 // Setting the Winning, Loses and Draw for the Game
