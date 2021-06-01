@@ -27,8 +27,8 @@ function requiredFunction() {
 requiredFunction();
 /* ============= B O N U S =============== */
 
-// Function for the radio-buttons selection (Rounds to played until GameOver)
-// For a better UX  default by 5 rounds 
+// Function for the radio-buttons selection (Points to played until GameOver)
+// For a better UX  default by 5 Points 
 function roundsSelected() {
     let selected = document.querySelector('input[type="radio"]:checked');
     return selected;
